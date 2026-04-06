@@ -3,100 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhishek Tyagi — DevOps and SRE consulting: CI/CD, Kubernetes, observability, streaming data platforms, and cloud infrastructure for production-grade systems.">
-    <title>Abhishek Tyagi | DevOps & Infrastructure Services</title>
+    <meta name="description" content="Abhishek Tyagi & Paras Goel — DevOps and SRE consulting: CI/CD, Kubernetes, observability, streaming data platforms, and cloud infrastructure.">
+    <title>Ops & Engineering | DevOps & Platform Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=skill-tiles">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="#top">
+            <span class="brand-pip"></span>
+            ops-and-engineering
+        </a>
+        <nav class="nav">
+            <a href="#team">Team</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#linkedin">LinkedIn</a>
+            <a class="nav-cta" href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+
+    <!-- ══════════════════════════════════════════
+         TEAM — side-by-side Backstage profile cards
+         ══════════════════════════════════════════ -->
+    <section id="team" class="section section-alt">
         <div class="wrap">
-            <a class="brand" href="#top">AT · Platform &amp; DevOps</a>
-            <nav class="nav">
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#linkedin">LinkedIn</a>
-                <a class="nav-cta" href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <main id="top">
-        <section class="hero" aria-labelledby="hero-heading">
-            <div class="wrap hero-inner">
-                <div class="logo-slot" aria-label="Logo placeholder — replace with your brand image">
-                    <!-- Swap the span below for: <img class="logo-img" src="logo.png" alt="Your company logo" width="140" height="140" /> -->
-                    <span class="logo-placeholder">
-                        <svg class="logo-mark" viewBox="0 0 120 120" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="120" height="120" rx="16" fill="currentColor" opacity="0.12"/>
-                            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="currentColor" font-size="36" font-family="JetBrains Mono, monospace" font-weight="600">AT</text>
-                        </svg>
-                    </span>
-                </div>
-                <p class="eyebrow">DevOps · SRE · Platform engineering</p>
-                <h1 id="hero-heading" class="hero-title">Abhishek Tyagi</h1>
-                <p class="punchline punchline-split">
-                    <span class="punchline-line">Reliable pipelines. Resilient infrastructure.</span>
-                    <span class="punchline-line">Observability you can trust.</span>
-                </p>
-                <p class="hero-sub">Infrastructure &amp; DevOps Lead · 14 years building production platforms across finance, cloud, and enterprise.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="mailto:abhi29tyagi@gmail.com">Start a conversation</a>
-                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/abhi29tyagi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </div>
-                <p class="hero-meta"><a href="mailto:abhi29tyagi@gmail.com">abhi29tyagi@gmail.com</a> · <a href="https://wa.me/919650022019" target="_blank" rel="noopener noreferrer">WhatsApp +91 96500 22019</a></p>
+            <div class="team-header">
+                <h2 class="section-title">Team</h2>
+                <span class="team-badge">2 members · active</span>
             </div>
-        </section>
 
-        <div class="main-content">
+            <div class="team-grid">
+
+                <!-- ── Abhishek Tyagi ── -->
+                <div class="profile-card profile-card--at">
+                    <div class="pc-stripe"></div>
+
+                    <div class="pc-top">
+                        <div class="pc-avatar-wrap">
+                            <div class="pc-avatar">AT</div>
+                            <span class="pc-status pc-status--online" title="Active"></span>
+                        </div>
+                        <div class="pc-identity">
+                            <h3 class="pc-name">Abhishek Tyagi</h3>
+                            <div class="pc-role-row">
+                                <span class="pc-role">Co-founder</span>
+                                <span class="pc-role-pill">DevOps &amp; Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pc-chips">
+                        <span class="pc-chip">Kubernetes</span>
+                        <span class="pc-chip">Terraform</span>
+                        <span class="pc-chip">Kafka</span>
+                        <span class="pc-chip">Observability</span>
+                        <span class="pc-chip">AWS · OCI</span>
+                        <span class="pc-chip">Cloudflare</span>
+                    </div>
+
+                    <div class="pc-stats">
+                        <div class="pc-stat">
+                            <span class="pc-stat-val">14+</span>
+                            <span class="pc-stat-lbl">yrs exp</span>
+                        </div>
+                        <div class="pc-stat">
+                            <span class="pc-stat-val">6</span>
+                            <span class="pc-stat-lbl">service areas</span>
+                        </div>
+                        <div class="pc-stat">
+                            <span class="pc-stat-val">EMEA · IN</span>
+                            <span class="pc-stat-lbl">regions</span>
+                        </div>
+                    </div>
+
+                    <div class="pc-footer">
+                        <p class="pc-desc">
+                            14+ years building production-grade platforms across cloud, finance, and enterprise systems. Led infrastructure at LMNTO, Emirates NBD, and NVIDIA. Specialises in Kubernetes, GitOps, streaming data at scale, and full-stack observability.
+                        </p>
+                        <div class="pc-links">
+                            <a class="pc-link" href="https://www.linkedin.com/in/abhi29tyagi/" target="_blank" rel="noopener noreferrer">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                LinkedIn
+                            </a>
+                            <a class="pc-link" href="#contact">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /AT card -->
+
+                <!-- ── Paras Goel — placeholder card ── -->
+                <!-- UPDATE: Replace all [TODO] items once Paras's details are confirmed -->
+                <div class="profile-card profile-card--pg">
+                    <div class="pc-stripe"></div>
+
+                    <div class="pc-top">
+                        <div class="pc-avatar-wrap">
+                            <div class="pc-avatar">PG</div>
+                            <!-- Status dot: change to pc-status--online once profile is live -->
+                            <span class="pc-status pc-status--pending" title="Profile pending"></span>
+                        </div>
+                        <div class="pc-identity">
+                            <h3 class="pc-name">Paras Goel</h3>
+                            <div class="pc-role-row">
+                                <span class="pc-role">Co-founder</span>
+                                <!-- [TODO] Update role tag if needed -->
+                                <span class="pc-role-pill">Platform Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- [TODO] Replace placeholder chips with real skills -->
+                    <div class="pc-chips">
+                        <span class="pc-chip pc-chip--ph">+ skill</span>
+                        <span class="pc-chip pc-chip--ph">+ skill</span>
+                        <span class="pc-chip pc-chip--ph">+ skill</span>
+                        <span class="pc-chip pc-chip--ph">+ skill</span>
+                    </div>
+
+                    <div class="pc-stats">
+                        <!-- [TODO] Replace TBD values with real numbers -->
+                        <div class="pc-stat">
+                            <span class="pc-stat-val pc-stat-val--ph">TBD yrs</span>
+                            <span class="pc-stat-lbl">experience</span>
+                        </div>
+                        <div class="pc-stat">
+                            <span class="pc-stat-val pc-stat-val--ph">TBD</span>
+                            <span class="pc-stat-lbl">service areas</span>
+                        </div>
+                        <div class="pc-stat">
+                            <span class="pc-stat-val pc-stat-val--ph">TBD</span>
+                            <span class="pc-stat-lbl">regions</span>
+                        </div>
+                    </div>
+
+                    <div class="pc-footer">
+                        <!-- Remove this notice once the card is complete -->
+                        <div class="pc-pending-notice">
+                            ✏&nbsp; Profile pending — update bio, chips, stats &amp; links below
+                        </div>
+
+                        <!-- [TODO] Replace with Paras's real bio -->
+                        <p class="pc-desc pc-desc--ph">
+                            Focused on automation, platform design, and scalable DevOps foundations for modern teams. Add Paras's background, past companies, specialisations, and key achievements here — then remove this placeholder text.
+                        </p>
+
+                        <div class="pc-links">
+                            <!-- [TODO] Add real LinkedIn URL -->
+                            <a class="pc-link pc-link--ph" href="#" aria-disabled="true" tabindex="-1">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                LinkedIn (add URL)
+                            </a>
+                            <!-- [TODO] Add real email address -->
+                            <a class="pc-link pc-link--ph" href="#" aria-disabled="true" tabindex="-1">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                Email (add address)
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /PG card -->
+
+            </div><!-- /team-grid -->
+        </div>
+    </section>
+
+    <div class="main-content">
+
+        <!-- ══════════════════════════════════════════
+             SERVICES — Backstage catalog cards
+             ══════════════════════════════════════════ -->
         <section id="services" class="section section-alt">
             <div class="wrap">
-                <h2 class="section-title">What I deliver</h2>
-                <p class="section-lead">Hands-on consulting aligned with how modern teams ship: automation first, security baked in, and platforms that scale.</p>
-                <div class="service-cards">
-                    <article class="service-card">
-                        <h3>CI/CD &amp; release engineering</h3>
-                        <p>Pipeline design, GitOps, quality gates (linting, tests, SonarQube), and repeatable releases from hours to minutes.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Kubernetes &amp; containers</h3>
-                        <p>EKS and on-prem clusters, Helm, migrations from OpenShift, hybrid workloads, and hardened platform patterns.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Observability</h3>
-                        <p>Prometheus, Grafana stack (Loki, Tempo), alerting, SLOs, and incident-ready visibility—not just dashboards.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Infrastructure as code</h3>
-                        <p>Terraform, Ansible, provisioning, lifecycle automation, and cost-aware right-sizing with your teams.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Streaming, caching &amp; messaging</h3>
-                        <p>Kafka and ZooKeeper (including MirrorMaker), Redis cluster operations, automation and DR, and observability tuned to lag, throughput, and cluster health. Flink and Kafka Streams only where they sit with microservices and the design calls for them—not as a default on every stack.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3>Cloud &amp; security</h3>
-                        <p>AWS, OCI, Cloudflare (WAF, tunnels, Zero Trust), and patterns that protect apps end-to-end.</p>
-                    </article>
+                <h2 class="section-title">Service catalog</h2>
+                <p class="section-lead">Hands-on consulting aligned with how modern teams ship — automation first, security baked in, platforms that scale.</p>
+
+                <div class="service-portal-grid">
+
+                    <a href="#ci-cd" class="svc-card svc--blue">
+                        <div class="svc-top">
+                            <div class="svc-icon">⚡</div>
+                            <div class="svc-arrow">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="svc-name">CI/CD &amp; Release Engineering</h3>
+                        <p class="svc-desc">Pipeline design, GitOps, quality gates (linting, tests, SonarQube), and repeatable releases from hours to minutes.</p>
+                        <div class="svc-tags">
+                            <span class="svc-tag">Jenkins</span>
+                            <span class="svc-tag">GitLab CI</span>
+                            <span class="svc-tag">GitOps</span>
+                            <span class="svc-tag">SonarQube</span>
+                        </div>
+                    </a>
+
+                    <a href="#kubernetes" class="svc-card svc--teal">
+                        <div class="svc-top">
+                            <div class="svc-icon">☸</div>
+                            <div class="svc-arrow">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="svc-name">Kubernetes &amp; Containers</h3>
+                        <p class="svc-desc">EKS and on-prem clusters, Helm, migrations from OpenShift, hybrid workloads, and hardened platform patterns.</p>
+                        <div class="svc-tags">
+                            <span class="svc-tag">EKS</span>
+                            <span class="svc-tag">Helm</span>
+                            <span class="svc-tag">OpenShift</span>
+                            <span class="svc-tag">Docker</span>
+                        </div>
+                    </a>
+
+                    <a href="#observability" class="svc-card svc--green">
+                        <div class="svc-top">
+                            <div class="svc-icon">📊</div>
+                            <div class="svc-arrow">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="svc-name">Observability</h3>
+                        <p class="svc-desc">Prometheus, Grafana stack (Loki, Tempo), alerting, SLOs, and incident-ready visibility — not just dashboards.</p>
+                        <div class="svc-tags">
+                            <span class="svc-tag">Prometheus</span>
+                            <span class="svc-tag">Grafana</span>
+                            <span class="svc-tag">Loki</span>
+                            <span class="svc-tag">Tempo</span>
+                        </div>
+                    </a>
+
+                    <a href="#infrastructure-as-code" class="svc-card svc--amber">
+                        <div class="svc-top">
+                            <div class="svc-icon">🏗</div>
+                            <div class="svc-arrow">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="svc-name">Infrastructure as Code</h3>
+                        <p class="svc-desc">Terraform, Ansible, provisioning, lifecycle automation, and cost-aware right-sizing with your teams.</p>
+                        <div class="svc-tags">
+                            <span class="svc-tag">Terraform</span>
+                            <span class="svc-tag">Ansible</span>
+                            <span class="svc-tag">vSphere</span>
+                            <span class="svc-tag">SaltStack</span>
+                        </div>
+                    </a>
+
+                    <a href="#streaming-caching-messaging" class="svc-card svc--purple">
+                        <div class="svc-top">
+                            <div class="svc-icon">🌊</div>
+                            <div class="svc-arrow">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="svc-name">Streaming, Caching &amp; Messaging</h3>
+                        <p class="svc-desc">Kafka &amp; ZooKeeper (incl. MirrorMaker), Redis cluster operations, DR automation, and observability tuned to lag, throughput, and cluster health.</p>
+                        <div class="svc-tags">
+                            <span class="svc-tag">Kafka</span>
+                            <span class="svc-tag">ZooKeeper</span>
+                            <span class="svc-tag">Redis</span>
+                            <span class="svc-tag">Flink</span>
+                        </div>
+                    </a>
+
+                    <a href="#cloud-security" class="svc-card svc--rose">
+                        <div class="svc-top">
+                            <div class="svc-icon">🛡</div>
+                            <div class="svc-arrow">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="svc-name">Cloud &amp; Security</h3>
+                        <p class="svc-desc">AWS, OCI, Cloudflare (WAF, tunnels, Zero Trust), and patterns that protect apps end-to-end.</p>
+                        <div class="svc-tags">
+                            <span class="svc-tag">AWS</span>
+                            <span class="svc-tag">OCI</span>
+                            <span class="svc-tag">Cloudflare</span>
+                            <span class="svc-tag">Zero Trust</span>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </section>
 
+        <!-- ══════════════════════════════════════════
+             ABOUT
+             ══════════════════════════════════════════ -->
         <section id="about" class="section">
             <div class="wrap">
                 <h2 class="section-title">About</h2>
                 <div class="profile-block">
-                    <p class="profile-lead">For well over a decade I have led infrastructure and DevOps teams through the real work of keeping platforms stable while shipping faster—balancing automation, security, and cost without losing sight of the business outcome.</p>
+                    <p class="profile-lead">For well over a decade I have led infrastructure and DevOps teams through the real work of keeping platforms stable while shipping faster — balancing automation, security, and cost without losing sight of the business outcome.</p>
                     <p>My background spans Kubernetes and OpenShift, GitOps-style delivery, Jenkins and pipeline-as-code, and full-stack observability with Prometheus and the Grafana ecosystem. I have operated Kafka and streaming stacks at scale on AWS and hybrid estates, and shipped production CI/CD with Terraform, Ansible, and the glue code that makes it repeatable.</p>
-                    <p>I partner closely with product and engineering, own problems end to end, and help teams build platforms they can run with—not black boxes that only one person understands.</p>
+                    <p>I partner closely with product and engineering, own problems end to end, and help teams build platforms they can run with — not black boxes that only one person understands.</p>
                 </div>
             </div>
         </section>
 
+        <!-- ══════════════════════════════════════════
+             EXPERIENCE
+             ══════════════════════════════════════════ -->
         <section id="experience" class="section section-alt">
             <div class="wrap">
                 <h2 class="section-title">Selected experience</h2>
@@ -109,7 +325,7 @@
                     <div class="timeline-item">
                         <span class="timeline-when">Apr 2022 – Nov 2024</span>
                         <h3 class="timeline-role">Technology Consultant · Emirates NBD</h3>
-                        <p>Led data streaming platform (24/7). OpenShift → Kubernetes on OCI via Helm/Terraform. Managed and deployed Kafka/ZooKeeper with MirrorMaker, Redis clusters, and Kafka Connect; Jenkins onboarding pipelines. Observability (Prometheus/Grafana), DR automation, and incident response—including Flink and Kafka Streams only where they complemented microservices, not platform-wide.</p>
+                        <p>Led data streaming platform (24/7). OpenShift → Kubernetes on OCI via Helm/Terraform. Managed and deployed Kafka/ZooKeeper with MirrorMaker, Redis clusters, and Kafka Connect; Jenkins onboarding pipelines. Observability (Prometheus/Grafana), DR automation, and incident response — Flink and Kafka Streams only where they complemented microservices, not platform-wide.</p>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-when">Nov 2020 – Mar 2022</span>
@@ -135,103 +351,102 @@
             </div>
         </section>
 
+        <!-- ══════════════════════════════════════════
+             SKILLS
+             ══════════════════════════════════════════ -->
         <section id="skills" class="section">
             <div class="wrap">
                 <h2 class="section-title">Technical skills</h2>
-                <p class="section-lead">Hover a tile to see more—or tap to expand on touch devices.</p>
+                <p class="section-lead">Hover a tile to see more — or tap to expand on touch devices.</p>
                 <div class="skill-tiles" role="list">
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">Cloud</h3>
                             <p class="skill-tile-tags">AWS · OCI</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Production and hybrid workloads on AWS; Oracle Cloud Infrastructure for migrations and OpenShift-to-K8s moves.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Production and hybrid workloads on AWS; Oracle Cloud Infrastructure for migrations and OpenShift-to-K8s moves.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">Containers</h3>
                             <p class="skill-tile-tags">Docker · Kubernetes · OpenShift · Helm</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Cluster design, Helm releases, OpenShift hardening, and migrations from legacy platforms to standardized K8s.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Cluster design, Helm releases, OpenShift hardening, and migrations from legacy platforms to standardized K8s.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">CI/CD</h3>
-                            <p class="skill-tile-tags">Jenkins · GitLab · Bitbucket · Groovy · Bash</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Pipeline-as-code, shared libraries, quality gates, and onboarding flows that cut setup from hours to minutes.</p>
-                                </div>
-                            </div>
+                            <p class="skill-tile-tags">Jenkins · GitLab CI · GitHub Actions</p>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Pipeline as code, automated testing &amp; quality checks, GitOps workflows, and release standardisation from hours to minutes.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">IaC &amp; config</h3>
                             <p class="skill-tile-tags">Terraform · Ansible · SaltStack</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Provisioning, drift control, and repeatable environments—from vSphere modules to cluster bootstrap and policy.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Provisioning, drift control, and repeatable environments — from vSphere modules to cluster bootstrap and policy.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">Monitoring &amp; logging</h3>
                             <p class="skill-tile-tags">Prometheus · Grafana · Loki · Tempo · ELK</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Unified metrics, logs, and traces; alerting and SLOs—not vanity dashboards—tied to incident response.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Unified metrics, logs, and traces; alerting and SLOs tied to incident response — not vanity dashboards.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">Streaming &amp; messaging</h3>
                             <p class="skill-tile-tags">Kafka · ZooKeeper · MirrorMaker · Redis</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Managing and deploying Kafka and ZooKeeper (MirrorMaker, Kafka Connect), Redis Sentinel and clusters, and observability so streaming and cache tiers stay measurable. Flink and Kafka Streams beside microservices only when the architecture warrants it.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Kafka and ZooKeeper (MirrorMaker, Kafka Connect), Redis Sentinel and clusters, and observability so streaming and cache tiers stay measurable. Flink and Kafka Streams beside microservices only when the architecture warrants it.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">Scripting</h3>
                             <p class="skill-tile-tags">Python · Shell</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Automation glue, release tooling, and integration scripts that keep pipelines and ops maintainable.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Automation glue, release tooling, and integration scripts that keep pipelines and ops maintainable.</p>
+                            </div></div>
                         </div>
                     </article>
+
                     <article class="skill-tile" role="listitem" tabindex="0" data-skill-tile aria-expanded="false">
                         <div class="skill-tile-inner">
                             <h3 class="skill-tile-title">Collaboration</h3>
                             <p class="skill-tile-tags">Git · GitHub · Bitbucket · Jira · Confluence</p>
-                            <div class="skill-tile-reveal">
-                                <div class="skill-tile-reveal-body">
-                                    <p>Workflows that keep engineering, ops, and leadership aligned on delivery and incidents.</p>
-                                </div>
-                            </div>
+                            <div class="skill-tile-reveal"><div class="skill-tile-reveal-body">
+                                <p>Workflows that keep engineering, ops, and leadership aligned on delivery and incidents.</p>
+                            </div></div>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
+        <!-- ══════════════════════════════════════════
+             LINKEDIN
+             ══════════════════════════════════════════ -->
         <section id="linkedin" class="section section-alt">
             <div class="wrap">
                 <h2 class="section-title">Connect on LinkedIn</h2>
@@ -243,53 +458,61 @@
             </div>
         </section>
 
+        <!-- ══════════════════════════════════════════
+             CONTACT
+             ══════════════════════════════════════════ -->
         <section id="contact" class="section cta-section">
             <div class="wrap cta-inner">
-                <h2 class="section-title">Let’s talk about your next platform milestone</h2>
-                <p class="cta-text">Whether you need CI/CD hardening, Kubernetes operations, or observability that your teams can run with—reach out.</p>
-                <a class="btn btn-primary btn-lg" href="mailto:abhi29tyagi@gmail.com">abhi29tyagi@gmail.com</a>
-                <p class="cta-meta"><a href="https://wa.me/919650022019" target="_blank" rel="noopener noreferrer">WhatsApp +91 96500 22019</a></p>
+                <h2 class="section-title">Let's talk about your next platform milestone</h2>
+                <p class="cta-text">Whether you need CI/CD hardening, Kubernetes operations, or observability that your teams can run with — reach out.</p>
+                <a class="btn btn-primary btn-lg" href="/cdn-cgi/l/email-protection#f79887849699939299909e999292859e9990b7909a969e9bd994989a"><span class="__cf_email__" data-cfemail="99f6e9eaf8f7fdfcf7fef0f7fcfcebf0f7fed9fef4f8f0f5b7faf6f4">[email&#160;protected]</span></a>
+                <p class="cta-meta"><a href="https://wa.me/9000000000" target="_blank" rel="noopener noreferrer">WhatsApp +91 90000 00000</a></p>
             </div>
         </section>
-        </div>
-    </main>
 
-    <footer class="footer">
-        <div class="wrap footer-inner">
-            <span>© <span id="y"></span> Abhishek Tyagi · DevOps &amp; SRE services</span>
-            <a href="https://www.linkedin.com/in/abhi29tyagi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-    </footer>
-    <script>
-        document.getElementById('y').textContent = new Date().getFullYear();
-        document.querySelectorAll('[data-skill-tile]').forEach(function (tile) {
-            tile.addEventListener('click', function (e) {
-                e.stopPropagation();
-                var wasOpen = tile.classList.contains('is-open');
-                document.querySelectorAll('[data-skill-tile]').forEach(function (t) {
-                    t.classList.remove('is-open');
-                    t.setAttribute('aria-expanded', 'false');
-                });
-                if (!wasOpen) {
-                    tile.classList.add('is-open');
-                    tile.setAttribute('aria-expanded', 'true');
-                }
+    </div><!-- /main-content -->
+</main>
+
+<footer class="footer">
+    <div class="wrap footer-inner">
+        <span>© <span id="y"></span> Abhishek Tyagi &amp; Paras Goel · DevOps &amp; Platform Engineering</span>
+        <a href="https://www.linkedin.com/in/abhi29tyagi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Skill tiles: click to expand, click elsewhere to close
+    document.querySelectorAll('[data-skill-tile]').forEach(function(tile) {
+        tile.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var wasOpen = tile.classList.contains('is-open');
+            document.querySelectorAll('[data-skill-tile]').forEach(function(t) {
+                t.classList.remove('is-open');
+                t.setAttribute('aria-expanded', 'false');
             });
-            tile.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    tile.click();
-                }
-            });
-        });
-        document.addEventListener('click', function (e) {
-            if (!e.target.closest('[data-skill-tile]')) {
-                document.querySelectorAll('[data-skill-tile].is-open').forEach(function (t) {
-                    t.classList.remove('is-open');
-                    t.setAttribute('aria-expanded', 'false');
-                });
+            if (!wasOpen) {
+                tile.classList.add('is-open');
+                tile.setAttribute('aria-expanded', 'true');
             }
         });
-    </script>
+        tile.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                tile.click();
+            }
+        });
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('[data-skill-tile]')) {
+            document.querySelectorAll('[data-skill-tile]').forEach(function(t) {
+                t.classList.remove('is-open');
+                t.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+</script>
 </body>
 </html>
