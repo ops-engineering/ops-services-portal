@@ -376,6 +376,26 @@ code {
     border-left: 2px solid var(--accent);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
+/* ════════════════════════════════════════════════
+   EXPERIENCE — Two-column layout (side by side)
+   ════════════════════════════════════════════════ */
+   .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* force side-by-side */
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.experience-column {
+    width: 100%;
+}
+
+/* Mobile fallback */
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .timeline-when {
     display: block; font-size: 0.73rem; font-weight: 600;
     color: var(--accent); margin-bottom: 0.28rem; font-family: var(--font-mono);
@@ -482,4 +502,7 @@ code {
     .skill-tile:hover { transform: none; }
     .skill-tile.is-open { transform: scale(1.01); }
 }
-@media (min-width: 769px) { .site-header .wrap { padding: 0 1.5rem; } }
+@media (max-width: 768px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .experience-grid { grid-template-columns: 1fr; }
+}
