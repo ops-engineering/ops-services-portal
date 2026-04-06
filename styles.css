@@ -275,6 +275,10 @@ code {
     border-color: var(--border-accent); color: var(--accent);
     background: rgba(56,139,253,0.06); text-decoration: none;
 }
+.pc-link::after {
+    content: "↗";
+    font-size: 0.7rem;
+}
 .pc-link--ph {
     border-style: dashed; color: var(--text-dim);
     border-color: rgba(255,255,255,0.07);
@@ -453,10 +457,38 @@ code {
 }
 
 /* ── LinkedIn ── */
-.linkedin-embed {
-    display: flex; flex-direction: column; align-items: center;
-    gap: 1rem; min-height: 180px; padding: 1.5rem;
-    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+/* ════════════════════════════════════════════════
+   LINKEDIN — Side by side layout
+   ════════════════════════════════════════════════ */
+   .linkedin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.linkedin-card {
+    display: flex;
+    justify-content: center;
+}
+
+/* Placeholder styling */
+.linkedin-placeholder {
+    width: 100%;
+    max-width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg-card);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 /* ── CTA ── */
@@ -492,17 +524,43 @@ code {
 /* ── Responsive ── */
 @media (max-width: 768px) {
     .site-header { height: auto; }
-    .site-header .wrap { flex-direction: column; align-items: stretch; padding-top: 0.7rem; padding-bottom: 0.7rem; gap: 0.55rem; }
-    .nav { justify-content: center; font-size: 0.77rem; gap: 0.15rem 0.3rem; }
-    .team-grid { grid-template-columns: 1fr; }
+
+    .site-header .wrap {
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        gap: 0.55rem;
+    }
+
+    .nav {
+        justify-content: center;
+        font-size: 0.77rem;
+        gap: 0.15rem 0.3rem;
+    }
+
+    /* TEAM */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* EXPERIENCE */
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* LINKEDIN */
+    .linkedin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* STATS */
     .pc-stats { flex-wrap: wrap; }
     .pc-stat { flex: 1 1 45%; }
     .pc-stat:nth-child(2) { border-right: none; }
     .pc-stat:nth-child(3) { border-top: 1px solid var(--border-soft); }
+
+    /* SKILLS */
     .skill-tile:hover { transform: none; }
     .skill-tile.is-open { transform: scale(1.01); }
-}
-@media (max-width: 768px) {
-    .team-grid { grid-template-columns: 1fr; }
-    .experience-grid { grid-template-columns: 1fr; }
 }
