@@ -322,6 +322,7 @@ code {
 .svc--amber  { --svc-glow: radial-gradient(ellipse 100% 80% at 5% 0%,rgba(210,153,34,0.06),transparent); }
 .svc--purple { --svc-glow: radial-gradient(ellipse 100% 80% at 5% 0%,rgba(188,140,255,0.07),transparent); }
 .svc--rose   { --svc-glow: radial-gradient(ellipse 100% 80% at 5% 0%,rgba(244,112,103,0.07),transparent); }
+.svc--sky    { --svc-glow: radial-gradient(ellipse 100% 80% at 5% 0%,rgba(121,192,255,0.08),transparent); }
 
 .svc-top {
     display: flex; align-items: flex-start;
@@ -338,6 +339,7 @@ code {
 .svc--amber  .svc-icon { background:rgba(210,153,34,0.11);  color:#d29922; border:1px solid rgba(210,153,34,0.22); }
 .svc--purple .svc-icon { background:rgba(188,140,255,0.11); color:#bc8cff; border:1px solid rgba(188,140,255,0.22); }
 .svc--rose   .svc-icon { background:rgba(244,112,103,0.11); color:#f47067; border:1px solid rgba(244,112,103,0.22); }
+.svc--sky    .svc-icon { background:rgba(121,192,255,0.12); color:#79c0ff; border:1px solid rgba(121,192,255,0.22); }
 
 .svc-arrow {
     width: 26px; height: 26px; border-radius: 50%;
@@ -360,7 +362,7 @@ code {
     color: var(--text-dim);
 }
 
-/* ── Profile block (About) ── */
+/* ── Profile block (legacy, kept for safety) ── */
 .profile-block {
     margin-top: 1.25rem; border-radius: var(--radius);
     padding: 1.5rem 1.5rem 1.5rem 1.35rem;
@@ -371,6 +373,91 @@ code {
 .profile-block p { margin: 0 0 1rem; font-size: 0.97rem; line-height: 1.7; color: var(--text-muted); }
 .profile-block p:last-child { margin-bottom: 0; }
 .profile-lead { font-size: 1.05rem !important; font-weight: 500; color: var(--text) !important; }
+
+/* ════════════════════════════════════════════════
+   ABOUT — Two-column: narrative + stat cards
+   ════════════════════════════════════════════════ */
+.about-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    padding: 2.5rem 0;
+}
+.about-eyebrow {
+    font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500;
+    color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase;
+    margin: 0 0 0.85rem;
+}
+.about-headline {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: 800; letter-spacing: -0.03em; line-height: 1.15;
+    color: var(--text);
+}
+.about-headline em {
+    font-style: normal;
+    background: linear-gradient(90deg, var(--accent), var(--sky));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.about-body {
+    margin: 0 0 1rem; font-size: 0.95rem;
+    color: var(--text-muted); line-height: 1.75;
+}
+.about-body:last-of-type { margin-bottom: 1.5rem; }
+.about-tags {
+    display: flex; flex-wrap: wrap; gap: 0.35rem;
+}
+.about-tag {
+    font-family: var(--font-mono); font-size: 0.69rem;
+    padding: 0.22rem 0.55rem; border-radius: 6px;
+    background: rgba(56,139,253,0.08);
+    border: 1px solid rgba(56,139,253,0.2);
+    color: var(--sky);
+}
+
+/* Stat cards grid (right column) */
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+}
+.about-stat-card {
+    padding: 1.25rem 1.1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    display: flex; flex-direction: column; gap: 0.4rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+.about-stat-card:hover {
+    border-color: rgba(56,139,253,0.3);
+    transform: translateY(-2px);
+}
+.about-stat-card--accent {
+    background: linear-gradient(135deg, rgba(56,139,253,0.1), rgba(121,192,255,0.05));
+    border-color: rgba(56,139,253,0.22);
+}
+.about-stat-val {
+    font-family: var(--font-mono); font-size: 1.8rem;
+    font-weight: 800; letter-spacing: -0.04em;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--text), var(--sky));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.about-stat-label {
+    font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;
+}
+
+@media (max-width: 860px) {
+    .about-block { grid-template-columns: 1fr; gap: 2rem; padding: 1.5rem 0; }
+    .about-stats  { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+    .about-stats { grid-template-columns: 1fr; }
+}
 
 /* ── Timeline ── */
 .timeline { display: flex; flex-direction: column; gap: 1.1rem; }
@@ -392,6 +479,14 @@ code {
 
 .experience-column {
     width: 100%;
+}
+
+.experience-owner {
+    margin: 0 0 1rem;
+    font-size: 0.9rem; font-weight: 700;
+    color: var(--text-muted); letter-spacing: 0.02em;
+    text-transform: uppercase; font-family: var(--font-mono);
+    font-size: 0.72rem;
 }
 
 /* Mobile fallback */
