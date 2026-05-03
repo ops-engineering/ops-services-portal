@@ -107,6 +107,33 @@ code {
     font-size: clamp(1.25rem, 2.5vw, 1.6rem);
     font-weight: 700; letter-spacing: -0.025em;
 }
+
+/* Value proposition / primary H1 for SEO */
+.seo-hero {
+    padding: clamp(1.75rem, 4vw, 2.75rem) 0;
+    border-bottom: 1px solid var(--border-soft);
+    background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg) 100%);
+}
+.seo-hero .wrap { max-width: var(--narrow); }
+.seo-hero h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.32rem, 3.1vw, 1.88rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.28;
+    color: var(--text);
+}
+.seo-hero-lead {
+    margin: 0;
+    font-size: 0.94rem;
+    color: var(--text-muted);
+    line-height: 1.68;
+}
+.seo-hero-lead strong {
+    color: color-mix(in srgb, var(--text) 88%, var(--text-muted));
+    font-weight: 600;
+}
+
 .section-lead {
     margin: 0 0 2rem; max-width: 42rem;
     color: var(--text-muted); font-size: 0.96rem;
