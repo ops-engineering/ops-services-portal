@@ -673,7 +673,8 @@ code {
     font-family: var(--font-mono);
 }
 .contact-field input,
-.contact-field textarea {
+.contact-field textarea,
+.contact-field select {
     width: 100%;
     background: var(--bg-card);
     color: var(--text);
@@ -682,8 +683,18 @@ code {
     padding: 0.58rem 0.7rem;
     font: inherit;
 }
+.contact-field select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--text-muted) 50%),
+                      linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
+    background-position: calc(100% - 16px) calc(50% - 3px), calc(100% - 11px) calc(50% - 3px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 2rem;
+}
 .contact-field input:focus,
-.contact-field textarea:focus {
+.contact-field textarea:focus,
+.contact-field select:focus {
     outline: none;
     border-color: var(--border-accent);
     box-shadow: 0 0 0 2px rgba(56,139,253,0.16);
@@ -851,4 +862,198 @@ code {
     /* CONTACT FORM */
     .cta-inner { max-width: 36rem; }
     .contact-grid { grid-template-columns: 1fr; }
+
+    .lp-hero-grid,
+    .lp-compare,
+    .lp-steps {
+        grid-template-columns: 1fr;
+    }
+    .lp-form-card {
+        position: static;
+    }
 }
+
+/* ════════════════════════════════════════════════
+   LANDING — infrastructure cost review
+   ════════════════════════════════════════════════ */
+.lp-hero {
+    padding: clamp(2rem, 6vw, 3.5rem) 0 2rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+.lp-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.95fr);
+    gap: 2rem;
+    align-items: start;
+}
+.lp-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0 0 0.85rem;
+}
+.lp-hero h1 {
+    margin: 0 0 0.9rem;
+    font-size: clamp(1.55rem, 3.4vw, 2.15rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.18;
+}
+.lp-lead {
+    margin: 0 0 1.25rem;
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 38rem;
+}
+.lp-bullets {
+    margin: 0 0 1.4rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+.lp-bullets li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--text);
+    font-size: 0.94rem;
+    line-height: 1.5;
+}
+.lp-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: var(--green);
+}
+.lp-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+.lp-proof-card {
+    flex: 1 1 160px;
+    padding: 0.95rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+.lp-proof-val {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--sky);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+.lp-proof-label {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+.lp-form-card {
+    position: sticky;
+    top: calc(var(--header-h) + 1rem);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.2rem 1.35rem;
+}
+.lp-form-card h2 {
+    margin: 0 0 0.35rem;
+    font-size: 1.12rem;
+}
+.lp-form-note {
+    margin: 0 0 1rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+.lp-form-card .btn {
+    width: 100%;
+}
+.lp-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+.lp-step {
+    padding: 1.1rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.lp-step-num {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+}
+.lp-step h3 {
+    margin: 0.4rem 0 0.4rem;
+    font-size: 0.95rem;
+}
+.lp-step p {
+    margin: 0;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+.lp-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+}
+.lp-compare-col {
+    padding: 1.15rem 1.1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+}
+.lp-compare-col.is-proposed {
+    border-color: rgba(63, 185, 80, 0.35);
+    background: rgba(63, 185, 80, 0.06);
+}
+.lp-compare-col h3 {
+    margin: 0 0 0.65rem;
+    font-size: 0.92rem;
+}
+.lp-compare-col ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+.lp-scope {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+.lp-chip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 0.28rem 0.6rem;
+    border-radius: 6px;
+    background: rgba(56, 139, 253, 0.08);
+    border: 1px solid rgba(56, 139, 253, 0.2);
+    color: var(--sky);
+}
+.lp-alt {
+    margin-top: 1rem;
+    font-size: 0.87rem;
+    color: var(--text-muted);
+}
+.lp-alt a { color: var(--sky); }

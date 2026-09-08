@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Abhishek Tyagi, Paras Goel">
+    <meta name="theme-color" content="#080d12">
+    <link rel="canonical" href="https://devopsai.cloud/cloud-cost-review.html">
+    <meta name="description" content="Free infrastructure cost review from DevOpsAI. Find wasted spend across AWS, Azure, GCP, on-prem, licensing, compute, storage and networking. See current vs proposed cost, monthly savings and payback.">
+    <title>Free Infrastructure Cost Review | DevOpsAI</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://devopsai.cloud/cloud-cost-review.html">
+    <meta property="og:site_name" content="DevOpsAI">
+    <meta property="og:title" content="Free Infrastructure Cost Review | DevOpsAI">
+    <meta property="og:description" content="Reduce cloud, server and infrastructure costs. See current vs proposed spend, estimated savings and payback before you change anything.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free Infrastructure Cost Review | DevOpsAI">
+    <meta name="twitter:description" content="Find wasted spend across cloud, on-prem, licensing, compute, storage and networking.">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Service","name":"Infrastructure Cost Review","url":"https://devopsai.cloud/cloud-cost-review.html","description":"Review current infrastructure costs across cloud and on-prem, identify unnecessary spend, and estimate savings and payback.","provider":{"@type":"ProfessionalService","name":"DevOpsAI","alternateName":["devopsai.cloud","ops-and-engineering"],"url":"https://devopsai.cloud/"},"areaServed":["Dubai","Abu Dhabi","United Arab Emirates"],"offers":{"@type":"Offer","price":"0","priceCurrency":"AED","name":"Free initial infrastructure cost review"}}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Ads tag: paste your AW- ID after creating conversion actions. -->
+    <script>
+        window.DEVOPSAI_ADS = {
+            awId: "",
+            formConversionLabel: "",
+            phoneConversionLabel: ""
+        };
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        function devopsaiConversion(label, extra) {
+            if (!window.DEVOPSAI_ADS || !window.DEVOPSAI_ADS.awId || !label) return;
+            var payload = Object.assign({ send_to: window.DEVOPSAI_ADS.awId + '/' + label }, extra || {});
+            gtag('event', 'conversion', payload);
+        }
+        if (window.DEVOPSAI_ADS.awId) {
+            var adsScript = document.createElement('script');
+            adsScript.async = true;
+            adsScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.DEVOPSAI_ADS.awId;
+            document.head.appendChild(adsScript);
+            gtag('js', new Date());
+            gtag('config', window.DEVOPSAI_ADS.awId);
+        }
+    </script>
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">
+            <span class="brand-pip"></span>
+            DevOpsAI
+        </a>
+        <nav class="nav">
+            <a href="index.html#services">Services</a>
+            <a href="team.html">Team</a>
+            <a class="nav-cta" href="#review-form">Free cost review</a>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+    <section class="lp-hero" aria-labelledby="lp-heading">
+        <div class="wrap lp-hero-grid">
+            <div>
+                <p class="lp-kicker">Infrastructure cost reduction</p>
+                <h1 id="lp-heading">Reduce infrastructure costs across cloud, servers and the data center</h1>
+                <p class="lp-lead">We review what you are actually spending, find waste, and show current cost versus proposed cost — with estimated monthly savings and payback — before you change anything.</p>
+                <ul class="lp-bullets">
+                    <li>Find unnecessary spend in AWS, Azure, GCP, on-prem, licensing, compute, storage and networking</li>
+                    <li>See a clear current vs proposed cost picture, not a generic FinOps dashboard</li>
+                    <li>Then optimize cloud, move workloads to cheaper infrastructure, or use private / on-prem where it pays back</li>
+                </ul>
+                <div class="lp-proof" id="proof">
+                    <div class="lp-proof-card">
+                        <span class="lp-proof-val">$177,849</span>
+                        <span class="lp-proof-label">saved per year in a recent anonymized engagement</span>
+                    </div>
+                    <div class="lp-proof-card">
+                        <span class="lp-proof-val">Free review</span>
+                        <span class="lp-proof-label">No commitment. You see the savings case first.</span>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="lp-form-card" id="review-form">
+                <h2>Get your free infrastructure cost review</h2>
+                <p class="lp-form-note">Tell us where the spend sits. We will come back with a practical savings picture — cloud, on-prem, or hybrid.</p>
+                <form class="contact-form" id="cost-review-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="756b1113-8b8d-449e-bd5f-58217d6df995">
+                    <input type="hidden" name="subject" value="Infrastructure cost review lead — DevOpsAI">
+                    <input type="hidden" name="from_name" value="DevOpsAI cost review">
+                    <input type="hidden" name="gclid" id="field-gclid" value="">
+                    <input type="hidden" name="utm_source" id="field-utm-source" value="">
+                    <input type="hidden" name="utm_campaign" id="field-utm-campaign" value="">
+                    <input type="hidden" name="utm_term" id="field-utm-term" value="">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <div class="contact-grid">
+                        <label class="contact-field">
+                            <span>Name</span>
+                            <input type="text" name="name" autocomplete="name" required>
+                        </label>
+                        <label class="contact-field">
+                            <span>Company</span>
+                            <input type="text" name="company" autocomplete="organization" required>
+                        </label>
+                        <label class="contact-field">
+                            <span>Work email</span>
+                            <input type="email" name="email" autocomplete="email" required>
+                        </label>
+                        <label class="contact-field">
+                            <span>Phone / WhatsApp</span>
+                            <input type="tel" name="phone" autocomplete="tel" required>
+                        </label>
+                        <label class="contact-field">
+                            <span>Where does most spend sit?</span>
+                            <select name="infrastructure" required>
+                                <option value="" selected disabled>Select one</option>
+                                <option>AWS</option>
+                                <option>Azure</option>
+                                <option>GCP</option>
+                                <option>Multi-cloud</option>
+                                <option>On-prem / data center</option>
+                                <option>Hybrid (cloud + on-prem)</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                        <label class="contact-field">
+                            <span>Approx. monthly infrastructure spend</span>
+                            <select name="monthly_spend" required>
+                                <option value="" selected disabled>Select a range</option>
+                                <option>Under $5,000</option>
+                                <option>$5,000 – $15,000</option>
+                                <option>$15,000 – $50,000</option>
+                                <option>$50,000 – $150,000</option>
+                                <option>$150,000+</option>
+                                <option>Not sure yet</option>
+                            </select>
+                        </label>
+                        <label class="contact-field contact-field--full">
+                            <span>Optional: what should we look at?</span>
+                            <textarea name="description" rows="4" placeholder="Environments, known waste, upcoming renewals, or constraints"></textarea>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary btn-lg" type="submit">Get My Free Infrastructure Cost Review</button>
+                    <p id="cost-review-status" class="contact-form-status" role="status" aria-live="polite"></p>
+                </form>
+                <p class="lp-alt">Prefer WhatsApp? <a href="https://wa.me/971521255889" target="_blank" rel="noopener noreferrer" data-ads-click="phone">Message +971 52 125 5889</a></p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="section" id="process">
+        <div class="wrap">
+            <h2 class="section-title">How the review works</h2>
+            <p class="section-lead">The outcome is a savings case you can act on. Cloud, private infrastructure, or on-prem are options — not the pitch.</p>
+            <div class="lp-steps">
+                <article class="lp-step">
+                    <span class="lp-step-num">01</span>
+                    <h3>Review current costs</h3>
+                    <p>Bills, servers, licensing, compute, storage, networking, and the workloads behind them.</p>
+                </article>
+                <article class="lp-step">
+                    <span class="lp-step-num">02</span>
+                    <h3>Find unnecessary spend</h3>
+                    <p>Idle capacity, oversized instances, unused licenses, expensive network paths, and over-provisioned environments.</p>
+                </article>
+                <article class="lp-step">
+                    <span class="lp-step-num">03</span>
+                    <h3>Current vs proposed</h3>
+                    <p>A side-by-side cost picture, with monthly and annual savings and an estimated payback period.</p>
+                </article>
+                <article class="lp-step">
+                    <span class="lp-step-num">04</span>
+                    <h3>Then decide how to save</h3>
+                    <p>Optimize in place, move workloads to cheaper infrastructure, or mix cloud and on-prem where the numbers work.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="scope">
+        <div class="wrap">
+            <h2 class="section-title">What we look at</h2>
+            <p class="section-lead">High-intent cloud waste is usually the fastest win. Broader infrastructure spend is often where the larger, lasting savings sit.</p>
+            <div class="lp-scope" aria-label="Review scope">
+                <span class="lp-chip">AWS</span>
+                <span class="lp-chip">Azure</span>
+                <span class="lp-chip">GCP</span>
+                <span class="lp-chip">On-prem servers</span>
+                <span class="lp-chip">Private infrastructure</span>
+                <span class="lp-chip">Licensing</span>
+                <span class="lp-chip">Compute</span>
+                <span class="lp-chip">Storage</span>
+                <span class="lp-chip">Networking</span>
+                <span class="lp-chip">Data center</span>
+                <span class="lp-chip">Hybrid estates</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="compare">
+        <div class="wrap">
+            <h2 class="section-title">You see the numbers before any change</h2>
+            <p class="section-lead">We do not lead with “move off the cloud.” We lead with cost. The right destination is whichever option actually reduces spend without breaking the workload.</p>
+            <div class="lp-compare">
+                <div class="lp-compare-col">
+                    <h3>Current cost</h3>
+                    <ul>
+                        <li>What you pay today, by environment and workload</li>
+                        <li>Waste and avoidable premium that is already in the bill</li>
+                        <li>Renewals, licenses, and run-rate that will keep compounding</li>
+                    </ul>
+                </div>
+                <div class="lp-compare-col is-proposed">
+                    <h3>Proposed cost</h3>
+                    <ul>
+                        <li>Right-sized cloud, cheaper infrastructure, or a hybrid mix</li>
+                        <li>Estimated monthly and annual savings</li>
+                        <li>Payback period before you commit to a migration or rebuild</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="wrap footer-inner">
+        <span>© <span id="y"></span> DevOpsAI · Infrastructure cost reduction</span>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <span class="footer-sep" aria-hidden="true">·</span>
+            <a href="team.html">Team</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    (function captureAdsParams() {
+        var params = new URLSearchParams(window.location.search);
+        var map = {
+            gclid: 'field-gclid',
+            utm_source: 'field-utm-source',
+            utm_campaign: 'field-utm-campaign',
+            utm_term: 'field-utm-term'
+        };
+        Object.keys(map).forEach(function(key) {
+            var el = document.getElementById(map[key]);
+            if (el && params.get(key)) el.value = params.get(key);
+        });
+    })();
+
+    document.querySelectorAll('[data-ads-click="phone"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+            devopsaiConversion(window.DEVOPSAI_ADS && window.DEVOPSAI_ADS.phoneConversionLabel);
+        });
+    });
+
+    (function() {
+        var form = document.getElementById('cost-review-form');
+        var status = document.getElementById('cost-review-status');
+        if (!form || !status) return;
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            var submitBtn = form.querySelector('button[type="submit"]');
+            var originalBtnText = submitBtn ? submitBtn.textContent : 'Submit';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+            }
+            try {
+                var formData = new FormData(form);
+                var response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                var data = await response.json();
+                if (data.success) {
+                    status.textContent = 'Request received. We will follow up with next steps for your cost review.';
+                    status.className = 'contact-form-status is-success';
+                    var email = form.querySelector('input[name="email"]');
+                    var phone = form.querySelector('input[name="phone"]');
+                    if (window.gtag && window.DEVOPSAI_ADS && window.DEVOPSAI_ADS.awId) {
+                        gtag('set', 'user_data', {
+                            email: email ? email.value : undefined,
+                            phone_number: phone ? phone.value : undefined
+                        });
+                    }
+                    devopsaiConversion(window.DEVOPSAI_ADS && window.DEVOPSAI_ADS.formConversionLabel);
+                    form.reset();
+                } else {
+                    status.textContent = data.message || 'Could not send. Please try WhatsApp or retry.';
+                    status.className = 'contact-form-status is-error';
+                }
+            } catch (err) {
+                status.textContent = 'Network error. Please try again or WhatsApp us.';
+                status.className = 'contact-form-status is-error';
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                }
+            }
+        });
+    })();
+</script>
+</body>
+</html>
