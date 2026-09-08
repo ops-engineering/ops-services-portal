@@ -30,27 +30,24 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google Ads tag: paste your AW- ID after creating conversion actions. -->
+    <!-- Google Ads: Submit lead form AW-18437796067/ovgNCPG3k_EcEOPh6ddE -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18437796067"></script>
     <script>
         window.DEVOPSAI_ADS = {
-            awId: "",
-            formConversionLabel: "",
+            awId: "AW-18437796067",
+            formConversionLabel: "ovgNCPG3k_EcEOPh6ddE",
             phoneConversionLabel: ""
         };
         window.dataLayer = window.dataLayer || [];
         function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18437796067');
         function devopsaiConversion(label, extra) {
             if (!window.DEVOPSAI_ADS || !window.DEVOPSAI_ADS.awId || !label) return;
-            var payload = Object.assign({ send_to: window.DEVOPSAI_ADS.awId + '/' + label }, extra || {});
+            var payload = Object.assign({
+                send_to: window.DEVOPSAI_ADS.awId + '/' + label
+            }, extra || {});
             gtag('event', 'conversion', payload);
-        }
-        if (window.DEVOPSAI_ADS.awId) {
-            var adsScript = document.createElement('script');
-            adsScript.async = true;
-            adsScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.DEVOPSAI_ADS.awId;
-            document.head.appendChild(adsScript);
-            gtag('js', new Date());
-            gtag('config', window.DEVOPSAI_ADS.awId);
         }
     </script>
 </head>
@@ -301,7 +298,10 @@
                             phone_number: phone ? phone.value : undefined
                         });
                     }
-                    devopsaiConversion(window.DEVOPSAI_ADS && window.DEVOPSAI_ADS.formConversionLabel);
+                    devopsaiConversion(window.DEVOPSAI_ADS.formConversionLabel, {
+                        value: 1.0,
+                        currency: 'AED'
+                    });
                     form.reset();
                 } else {
                     status.textContent = data.message || 'Could not send. Please try WhatsApp or retry.';
